@@ -1,6 +1,6 @@
 from todo_functions import add_item, remove_item, mark_item, view_todo
 
-file_name = "./Saturday/Revision/list.csv"
+file_name = "list.csv"
 
 try:
     #  open the file in read mode
@@ -9,7 +9,7 @@ try:
     print("In try clock")
     # if it throws error, means the file doesn't exist
     # if no error, it means the file exists
-except FileNotFoungdError:
+except FileNotFoundError:
     # now we know the file doesn't exist
     # create the file
     todo_file = open(file_name, "w")
